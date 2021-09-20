@@ -23,7 +23,7 @@ The integral part `Ki` can compensate for any constant bias the controlled objec
 
 #### Tuning PID parameters
 
-My approach to tuning PID hyperparameters was as found in one of the [forum discussions](https://discussions.udacity.com/t/how-to-tune-parameters/303845/4?u=jgrodowski). I started with `Ki` and `Kd` set to 0, which makes the controller a simple P-controller and tried to tune `Kp` so that the error and oscilations remain small for the longest possible distance travelled until the car overshoots.
+My approach to tuning PID hyperparameters was as found in one of the forum discussions. I started with `Ki` and `Kd` set to 0, which makes the controller a simple P-controller and tried to tune `Kp` so that the error and oscilations remain small for the longest possible distance travelled until the car overshoots.
 
 Then I started increasing `Kd` to compensate overshooting and observed how the car became more stable in several small steps, from `0.1` up to `3.5`.
 
